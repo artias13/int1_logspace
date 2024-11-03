@@ -27,6 +27,8 @@ services:
       - MYSQL_PORT=${MYSQL_PORT}
       - MYSQL_DATABASE=${MYSQL_DATABASE}
     container_name: app
+    depends_on:
+      db:
 volumes:
   db:
   app:
